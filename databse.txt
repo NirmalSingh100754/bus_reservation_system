@@ -1,0 +1,70 @@
+
+AVILABLE JOURNEY DATES AND ROUTES.
+
+
+
+
+
+
+
+
+
+
+
+
+
+TABLES AVILABLE IN DATABASE 'BUS'
+
+records in table operators
++-------------+----------------+---------------+------------+-------------------------+
+| operator_id | name           | address       | phone      | email                   |
++-------------+----------------+---------------+------------+-------------------------+
+|           1 | KAMLA TRAVELS  | GUNA M.P.     | 1231231234 | kamlatravels@gmail.com  |
+|           2 | RAHUL TRAVELS  | VARANASI U.P. | 1111111111 | rahultravels@gmail.com  |
+|           3 | AKASH TRAVELS  | INDORE M.P.   | 2222222222 | akashtravels@gmail.com  |
+|           4 | KUMMAN TRAVELS | GUNA M.P.     | 3333333333 | kummantravels@gmail.com |
+|           5 | NIRMAL TRAVELS | MIRZAPUR U.P. | 1111122222 | nirmaltravels@gmail.com |
++-------------+----------------+---------------+------------+-------------------------+
+
+records in route_details.
++----------+--------------+------------+-------+
+| route_id | station_Name | station_id | mark  |
++----------+--------------+------------+-------+
+|       10 | GUNA         |        100 |    0  |
+|       10 | SADA         |        101 |    0  |
+|       10 | BINAGANJ     |        102 |    0  |
+|       11 | GUNA         |        100 |    1  |
+|       11 | SADA         |        101 |    1  |
+|       11 | BINAGANJ     |        102 |    1  |
+|       12 | ALLAHABAD    |        106 |    0  |
+|       12 | VARANASI     |        108 |    0  |
+|       13 | ALLAHABAD    |        106 |    1  |
+|       13 | VARANASI     |        108 |    1  |
++----------+--------------+------------+-------+
+
+records in table bus_details.
++-------+-------------+----------+------+-------------+----------+
+| busid | bustype     | capacity | fare | operator_id | route_id |
++-------+-------------+----------+------+-------------+----------+
+|  1000 | AC 2X2      |       35 | 1500 |           1 |       10 |
+|  1001 | AC 3X2      |       35 | 1200 |           2 |       11 |
+|  1002 | AC 3X3      |       35 | 1250 |           3 |       10 |
+|  1003 | SLEEPER 2X2 |       40 |  800 |           4 |       10 |
+|  1004 | SLEEPER 3X3 |       42 |  850 |           5 |       11 |
+|  1005 | SLEEPER 3X3 |       50 |  900 |           5 |       12 |
+|  1006 | SLEEPER 3X3 |       50 |  900 |           5 |       13 |
++-------+-------------+----------+------+-------------+----------+
+
+records in table run_details.
++--------+--------------+----------+
+| bus_id | running_date | seat_avl |
++--------+--------------+----------+
+|   1000 | 2023-12-16   |       35 |
+|   1001 | 2023-12-16   |       35 |
+|   1002 | 2023-12-18   |       35 |
+|   1003 | 2023-12-19   |       40 |
+|   1004 | 2023-12-20   |       42 |
+|   1005 | 2023-12-15   |       50 |
+|   1006 | 2023-12-15   |       50 |
++--------+--------------+----------+
+7 rows in set (0.00 sec)
